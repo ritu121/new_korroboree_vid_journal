@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .whyhre {
+  font-size: 21px;
+  text-align: center;
+  margin-top: 10px;
+  font-family: Montserrat medium !important;
+}
+.pt-1{
+  padding:10px;
+  background-color: white;
+  height: 37px;
+  color: #13375B;
+  margin-top: 15px;
+  font-family: Montserrat !important;
+  font-weight: 600;
+  border-radius: 5px;
+  filter: drop-shadow(1px 3px 2px rgba(43, 41, 41, 0.781));
+}
+.txtarea {
+  margin-top: 10px;
+  color: #13375B;
+  font-weight: 600;
+  font-family: Montserrat!important;
+  filter: drop-shadow(1px 3px 2px rgba(43, 41, 41, 0.781));
+  font-family: inherit;
+  border: none;
+}
+.txtarea::placeholder {
+  color:#EFA500;
+  font-family: Montserrat medium !important;
+}
+    </style>
+	<script>
+	var count;
+	count=0;
+	function select1(x){
+	
+	if(count==0){
+	x.style.background='red';
+	
+	}
+	count=count+1;
+	}
+	</script>
+	
+	
+</head>
+<body>
+    <div class="whyhre"><center>Why are you here?</center></div>
+                    <div class="pt-1 " onclick="select1(this)" id="select1" >To know more about my child</div>
+                    <div class="pt-1 "  onclick="select1(this)" id="select2" >To learn about conscious parenting </div>
+                    <div class="pt-1 "  onclick="select1(this)" id="select3" >To interact with other parents</div>
+                    <div class="row txtarea">
+                        <textarea class="txtarea" placeholder="Others click here"></textarea>
+                    </div>
+</body>
+</html>
